@@ -1,0 +1,17 @@
+[user]
+	name = OniOni
+	email = mathieu.c.sabourin@gmail.com
+
+[color]
+        status = auto
+        branch = auto
+        ui     = true
+[diff]
+        color = auto
+[pager]
+        color = true
+[status]
+        color = auto
+
+[alias]
+    st = status
