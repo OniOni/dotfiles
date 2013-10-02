@@ -6,6 +6,10 @@
 (show-paren-mode 1)
 (setq show-paren-delai 0)
 
-;; whitespace cleanup                                                                                                                                                                                                                      
+;; whitespace cleanup
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook' whitespace-cleanup)
+
+;; js
+(custom-set-variables
+ '(js-indent-level 2))
