@@ -1,4 +1,4 @@
-function install() {
+install() {
     cp $1 ~/
 }
 
