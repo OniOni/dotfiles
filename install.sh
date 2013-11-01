@@ -1,5 +1,7 @@
+d=`dirname $0`
 install() {
-    cp $1 ~/
+    echo "Linking "$1
+    ln $d/$1 ~/
 }
 
 install .emacs
