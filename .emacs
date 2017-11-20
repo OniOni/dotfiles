@@ -24,6 +24,10 @@
 
 (package-install-selected-packages)
 
+;; Line and columns
+(column-number-mode t)
+(linum-mode t)
+
 ;; colors
 (set-foreground-color "white")
 (set-background-color "#3d3d3d")
@@ -39,6 +43,10 @@
 ;; no need for menus
 (menu-bar-mode 0)
 (tool-bar-mode 0)
+
+;; IDO
+(require 'ido)
+(ido-mode t)
 
 ;; Flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
