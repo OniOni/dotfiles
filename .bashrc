@@ -56,23 +56,23 @@ function _get_current_branch() {
 function _branch() {
     branch=`_get_current_branch`
     if [[ -n $branch ]]; then
-        echo "🌱  [$branch]"
+        echo "[$branch]"
     else
         echo ""
     fi
 }
 
 function _time() {
-    echo "🕒  (\t)"
+    echo "(\t)"
 }
 
 function _me() {
-    echo "🕴️  \u"
+    echo "\u"
 }
 
 function _dir() {
-    echo "🏠  \W/"
+    echo "\W/"
 }
 
-export PS1="`_time` `_me` `_dir` `_branch`  💵  > "
+export PS1="`_time`::`_me`::`_dir`"'::`_branch`::> '
 export CLICOLOR=1
