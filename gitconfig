@@ -15,3 +15,6 @@
 
 [alias]
     st = status
+
+[init]
+        defaultBranch = main
